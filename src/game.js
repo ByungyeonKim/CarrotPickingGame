@@ -72,6 +72,7 @@ class Game {
     this.showTimerAndScore();
     this.startGameTimer();
     sound.playBackground();
+    this.field.style.pointerEvents = 'auto';
   }
 
   stop(reason) {
