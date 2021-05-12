@@ -11,6 +11,14 @@ body {
   min-height: 100vh;
   display: grid;
   place-items: center;
+  user-select: none;
+}
+
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
 }
 
 .game {
@@ -48,7 +56,6 @@ body {
   font-size: 38px;
   color: whitesmoke;
   visibility: hidden;
-  user-select: none;
   cursor: auto;
 }
 
@@ -68,7 +75,6 @@ body {
   padding: 0.15em 0.5em;
   border-radius: 8px;
   visibility: hidden;
-  user-select: none;
   cursor: auto;
 }
 
