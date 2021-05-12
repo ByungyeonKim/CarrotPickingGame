@@ -140,11 +140,13 @@ class Game {
 
   initGame() {
     this.score = 0;
-    this.gameScore.innerText = this.carrotCount;
+    this.gameScore.innerHTML = `<span class="game__score-text">SCORE</span>
+          <span class="game__score-number">${this.carrotCount}</span>`;
     this.gameField.init();
   }
 
   updateScoreBoard() {
-    this.gameScore.innerText = this.carrotCount - this.score;
+    this.gameScore.innerHTML = `  <span class="game__score-text">SCORE</span>
+          <span class="game__score-number">${this.carrotCount - this.score}</span>`;
   }
 }
