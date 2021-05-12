@@ -42,6 +42,7 @@ class Game {
     this.carrotCount = carrotCount;
     this.bugCount = bugCount;
 
+    this.field = document.querySelector('.game__field');
     this.gameTimer = document.querySelector('.game__timer');
     this.gameScore = document.querySelector('.game__score');
     this.gameBtn = document.querySelector('.game__button');
@@ -79,6 +80,7 @@ class Game {
     this.hideGameBtn();
     sound.stopBackground();
     this.onGameStop && this.onGameStop(reason);
+    this.field.style.pointerEvents = 'none';
   }
 
   onItemClick = (item) => {
