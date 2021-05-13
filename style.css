@@ -85,6 +85,37 @@ img {
   position: relative;
 }
 
+.title__wrap {
+  display: flex;
+  flex-direction: column;
+
+  color: white;
+  text-align: center;
+  width: max-content;
+  background-color: dodgerblue;
+  padding: 2.5em 3em;
+  border-radius: 12px;
+  margin: auto;
+
+  transform: translateY(50px);
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  font-size: 1.5rem;
+}
+
+.description .fa-play {
+  color: coral;
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 0.1em;
+}
+
 /* pop-up menu */
 .pop-up {
   margin: auto;
