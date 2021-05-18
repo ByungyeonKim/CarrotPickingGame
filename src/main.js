@@ -14,7 +14,6 @@ const game = new GameBuilder()
 // const game = new Game(20, 20, 20);
 
 game.setGameStopListener((reason) => {
-  console.log(reason);
   let message;
   switch (reason) {
     case Reason.cancel:
